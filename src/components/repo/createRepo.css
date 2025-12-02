@@ -1,0 +1,60 @@
+.repo-container {
+  width: 450px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.repo-container h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.repo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.repo-form input,
+.repo-form textarea,
+.repo-form select {
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.repo-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.repo-form button {
+  padding: 10px;
+  background: #2da44e;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.repo-form button:hover {
+  background: #2c974b;
+}
+
+.repo-message {
+  margin-top: 15px;
+  padding: 10px;
+  background: #ddf4ff;
+  border: 1px solid #a5d8ff;
+  border-radius: 6px;
+  color: #0550ae;
+  font-weight: 500;
+}

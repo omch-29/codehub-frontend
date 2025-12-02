@@ -1,0 +1,183 @@
+/* .init-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.repo-box {
+  background: #f6f8fa;
+  padding: 20px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+}
+
+.url-box {
+  display: flex;
+  margin-top: 10px;
+}
+
+.url-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px 0 0 6px;
+  font-size: 14px;
+}
+
+.copy-btn {
+  padding: 10px 16px;
+  border: 1px solid #d0d7de;
+  border-left: none;
+  background: #f3f4f6;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.copy-btn:hover {
+  background: #e5e7eb;
+}
+
+.code-box {
+  background: #0d1117;
+  color: #e6edf3;
+  padding: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  overflow-x: auto;
+  border: 1px solid #30363d;
+}
+.ipage{
+    background-color: black;
+    color: white;
+} */
+ .init-container {
+  width: 100%;
+  /* min-height: 100vh; */
+  background: #000;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+.clone-box {
+  background: #111;
+  padding: 20px;
+  width: 600px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.clone-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.clone-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+.clone-input button {
+  padding: 10px 20px;
+  border: none;
+  background: #444;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.instructions {
+  margin-top: 30px;
+  background: #0d0d0d;
+  padding: 20px;
+  width: 1000px;
+  font-size: larger;
+  height: 195px;
+  margin: 20px auto;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  font-family: monospace;
+}
+.files-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.files-table th, .files-table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.file-row {
+  cursor: pointer;
+}
+
+/* .file-row:hover {
+  background: #f4f4f4;
+} */
+.repodel{
+  /* position: fixed; */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+    margin-bottom: 600px;
+    margin-right: 200px;
+    background-color: red;
+    color: white;
+    padding: "10px 20px";
+    border-radius: 6px;
+    cursor: pointer;
+}
+.dashred{
+  top: 20px;
+  left: 20px;
+  position: fixed;
+    margin-bottom: 600px;
+    margin-right: 200px;
+    background-color: black;
+    color: white;
+    padding: "10px 20px";
+    border-radius: 6px;
+    width: 140px;
+    height: 30px;
+    cursor: pointer;
+}
+.dashred:hover {
+  text-decoration: underline;
+}
+.share-btn {
+  position: fixed;
+  top: 20px;
+  left: 180px;   /* 👉 Moves to the right of Dashboard button */
+  background-color: white;
+  border: 1px solid #30363d;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.share-btn img {
+  width: 18px;
+  height: 18px;
+}
