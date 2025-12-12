@@ -2,7 +2,7 @@
 
 A powerful and lightweight command-line interface built for the **CodeHub Web Application**, allowing developers to add files, commit changes, and push code directly from their terminal — similar to Git, but simpler, faster, and fully integrated with the CodeHub backend.
 
-🔗 **Live Web App:** *<PASTE YOUR AWS URL HERE>*  
+🔗 **Live Web App:**   
 https://main.dc5bs2bxp9e9j.amplifyapp.com/
 
 ## ✨ Features
