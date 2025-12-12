@@ -1,4 +1,4 @@
-# 🚀 CodeHub GHX CLI
+# 🚀 CodeHub - A light-weight version control system
 
 A powerful and lightweight command-line interface built for the **CodeHub Web Application**, allowing developers to add files, commit changes, and push code directly from their terminal — similar to Git, but simpler, faster, and fully integrated with the CodeHub backend.
 
