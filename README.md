@@ -21,7 +21,7 @@ https://main.dc5bs2bxp9e9j.amplifyapp.com/
 ## 📦 Installation
 
 Install globally from npm:
-gititie,f,xxf,lnmhmnmz
+
 ```bash
 npm install -g codehub-ghx-cli
 url of package on npm : https://www.npmjs.com/package/codehub-ghx-cli
