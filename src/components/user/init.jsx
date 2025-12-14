@@ -9,7 +9,7 @@ import { useLocation } from "react-router-dom";
 import share from "../../assets/share.png";
 
 
-axios.defaults.baseURL = "https://codehub-backend-jj4b.onrender.com"; // adjust if backend runs elsewhere
+axios.defaults.baseURL = "https://codehub-backend-jj4b.onrender.com"; 
 
 export default function InitPage() {
   const navigate = useNavigate();
@@ -331,30 +331,6 @@ ghx push
 }
 
 
-// function buildTree(files) {
-//   const tree = {};
-
-//   files.forEach(file => {
-//     const parts = file.path.split("/");
-//     let current = tree;
-
-//     // skip "commits", commitId
-//     parts = parts.slice(2);
-
-//     parts.forEach((part, index) => {
-//       if (!current[part]) {
-//         current[part] = {
-//           name: part,
-//           children: {},
-//           isFolder: index !== parts.length - 1 || file.isFolder
-//         };
-//       }
-//       current = current[part].children;
-//     });
-//   });
-
-//   return tree;
-// }
 
 // function renderTree(tree, repoId) {
 //   return Object.values(tree).map(node => (
