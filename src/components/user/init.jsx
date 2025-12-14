@@ -94,7 +94,7 @@ if (!folderPath) {
     return !withoutRepo.includes("/"); 
   });
 } else {
-  // inside some folder → show only its children
+  
   files = rawFiles.filter(f => f.path.startsWith(folderPath));
 
   files = files.filter(f => {
