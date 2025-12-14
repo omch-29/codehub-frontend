@@ -88,7 +88,6 @@ const rawFiles = Array.isArray(repo.content) ? repo.content : [];
 let files = rawFiles;
 
 if (!folderPath) {
-  // root level → only show first-level items
   files = rawFiles.filter(f => {
     const withoutRepo = f.path.split("/").slice(2).join("/"); 
     return !withoutRepo.includes("/"); 
@@ -99,7 +98,7 @@ if (!folderPath) {
 
   files = files.filter(f => {
     const inner = f.path.replace(folderPath, "").split("/");
-    return inner[0] !== "" && inner.length === 1; // direct children only
+    return inner[0] !== "" && inner.length === 1; 
   });
 }
 
@@ -282,7 +281,6 @@ ghx push
   if (f.isFolder) {
     const newPath = f.path + "/"; 
     setFolderPath(newPath);
-    // Navigate inside the folder
     // const newPath = encodeURIComponent(f.path); // repo/<id>/folder/
     // navigate(`/repo/${repo._id}/tree?path=${newPath}`);
   } else {
