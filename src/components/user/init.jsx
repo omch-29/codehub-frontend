@@ -74,14 +74,13 @@ export default function InitPage() {
     } catch (err) {}
   }, 2000);
 
-  return () => clearInterval(poll);  // ← FIX
+  return () => clearInterval(poll);  
 }, [repoId]);
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>{error}</div>;
   if (!repo) return <div>Repository not found.</div>;
 
-  // const files = Array.isArray(repo.content) ? repo.content : [];
   
 const rawFiles = Array.isArray(repo.content) ? repo.content : [];
 
@@ -134,8 +133,8 @@ function buildTree(files) {
   const tree = {};
 
   files.forEach(f => {
-    const parts = f.path.split("/"); // ["repo", commitId, ... folders ..., file]
-    const inner = parts.slice(2);    // remove "repo", commitId
+    const parts = f.path.split("/"); 
+    const inner = parts.slice(2);    
     let current = tree;
 
     inner.forEach((part, idx) => {
@@ -149,7 +148,6 @@ function buildTree(files) {
         };
       }
 
-      // attach file metadata on final node
       if (isLast) {
         current[part].file = f;
       }
