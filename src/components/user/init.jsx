@@ -290,8 +290,7 @@ ghx push
 }}
 
 //             onClick={() => {
-//   const key = f.path;  // cleanPath only
-// window.location.href =
+
 
 
 //             onClick={() => {
