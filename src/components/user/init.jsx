@@ -292,9 +292,7 @@ ghx push
 //             onClick={() => {
 //   const key = f.path;  // cleanPath only
 // window.location.href =
-//   `https://codehub-backend-jj4b.onrender.com/repo/file/${repo._id}?path=${encodeURIComponent(key)}`;
 
-// }}
 
 //             onClick={() => {
 //   const key = f.fullS3Path || f.path;
