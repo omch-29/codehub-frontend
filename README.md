@@ -16,7 +16,7 @@ https://main.dc5bs2bxp9e9j.amplifyapp.com/
 - ⚡ Extremely fast & beginner friendly  
 - 🧩 Works inside any project folder  
 
----
+---------
 
 ## 📦 Installation
 
