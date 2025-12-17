@@ -81,4 +81,5 @@ button:focus-visible {
     background-color: aliceblue;
     color: blanchedalmond;
     position: relative;
+    border-radius: 2%;
   }
