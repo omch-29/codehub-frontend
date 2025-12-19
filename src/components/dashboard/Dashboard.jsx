@@ -151,5 +151,5 @@ export default Dashboard;
 
 
 async function name(params) {
-  
+  return true;
 }
