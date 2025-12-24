@@ -60,7 +60,7 @@ const Profile = () => {
             },
           }}
         >
-          Starred Repositories
+          {/* Starred Repositories */}
         </UnderlineNav.Item>
       </UnderlineNav>
 

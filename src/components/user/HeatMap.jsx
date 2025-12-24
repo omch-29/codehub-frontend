@@ -1,75 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import axios from "axios";
-// import { ActivityCalendar } from "react-activity-calendar";
-
-// const HeatMapProfile = () => {
-//   const [activity, setActivity] = useState([]);
-
-//   useEffect(() => {
-//     const load = async () => {
-//       const userId = localStorage.getItem("userId");
-
-//       const res = await axios.get(
-//         `https://codehub-backend-jj4b.onrender.com/repo/contributions/${userId}`
-//       );
-
-//       const grouped = {};
-
-//       res.data.forEach((item) => {
-//         const d = item.date.split("T")[0];
-//         grouped[d] = (grouped[d] || 0) + 1;
-//       });
-
-//       const data = Object.keys(grouped).map((date) => ({
-//         date,
-//         count: grouped[date],
-//         level: Math.min(4, grouped[date]),
-//       }));
-
-//       setActivity(data);
-//     };
-
-//     load();
-//   }, []);
-
-//   if (activity.length === 0) {
-//     return <div>Loading heatmap...</div>;
-//   }
-
-//   return (
-//     <div>
-//       <h3>Recent Contributions</h3>
-
-//       <ActivityCalendar
-//         data={activity}
-//         blockSize={13}
-//         blockMargin={4}
-//         maxLevel={4}
-//         showWeekdayLabels={true}
-//         weekStartsOn={1}
-//         hideColorLegend={false}
-//         labels={{
-//           months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-//                    "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-//           weekdays: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-//         }}
-
-//         theme={{
-//           // level 0 = transparent (no colored Monday)
-//           light: [
-//             "transparent", 
-//             "#9be9a8", // L1
-//             "#40c463", // L2
-//             "#30a14e", // L3
-//             "#216e39"  // L4
-//           ],
-//         }}
-//       />
-//     </div>
-//   );
-// };
-
-// export default HeatMapProfile;
 
 
 import React, { useEffect, useState } from "react";
@@ -81,10 +9,7 @@ const HeatMapProfile = () => {
 
   useEffect(() => {
     const load = async () => {
-      // ⛔ OLD: used userId
-      // const userId = localStorage.getItem("userId");
-
-      // ✅ NEW: extract repoId
+     
       const repoId = localStorage.getItem("repoId") ||
   localStorage.getItem("currentRepoId") ||
   new URLSearchParams(window.location.search).get("repoId");
@@ -103,7 +28,7 @@ console.log("Response:", res.data);
       const grouped = {};
 
       res.data.forEach((item) => {
-        const d = item.pushedAt.split("T")[0]; // use pushedAt from DB
+        const d = item.pushedAt.split("T")[0]; 
         grouped[d] = (grouped[d] || 0) + 1;
       });
 

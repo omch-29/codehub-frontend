@@ -129,10 +129,10 @@ const Dashboard = () => {
                 <h3>Upcoming Events</h3>
           <ul>
             <li>
-              <p>Tech Conference - Dec 15</p>
+              <p>Tech Conference - 26 January 2026</p>
             </li>
             <li>
-              <p>Developer Meetup - Dec 25</p>
+              <p>Developer Meetup - 8 february 2025</p>
             </li>
             <li>
               <p>React Summit - Jan 5</p>
