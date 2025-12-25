@@ -37,6 +37,12 @@ const Login = () => {
   };
     return(
         <div className="login-wrapper">
+        {loading && (
+      <div className="loading-overlay">
+        <h2>Loading…</h2>
+        <p>Thanks for your patience, backend is waking up</p>
+      </div>
+    )}
       <div className="login-logo-container">
         <img className="logo-login" src={logo} alt="Logo" />
       </div>
