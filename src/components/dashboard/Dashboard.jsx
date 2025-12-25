@@ -9,6 +9,7 @@ const Dashboard = () => {
   const [suggestedRepositories, setSuggestedRepositories] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
   const [suggestSearch, setSuggestSearch] = useState("");
+  const [loading, setLoading] = useState(true);
 
 
   useEffect(() => {
@@ -36,9 +37,21 @@ const Dashboard = () => {
         console.error("Error while fecthing repositories: ", err);
       }
     };
-
-    fetchRepositories();
-    fetchSuggestedRepositories();
+    const loadAllData = async () => {
+    try {
+      await Promise.all([
+        fetchRepositories(),
+        fetchSuggestedRepositories(),
+      ]);
+    } catch (err) {
+      console.error("Error loading dashboard:", err);
+    } finally {
+      setLoading(false); 
+    }
+  };
+    // fetchRepositories();
+    // fetchSuggestedRepositories();
+    loadAllData();
   }, []);
 
         useEffect(() => {
@@ -81,6 +94,12 @@ const Dashboard = () => {
 
     return(
       <><Navbar/>
+      {loading && (
+      <div className="loading-overlay">
+        <h2>Loading…</h2>
+        <p>Thanks for your patience, backend is waking up</p>
+      </div>
+    )}
         <section id="dashboard">
             <aside className="sug">
                 <h3>Suggested Repositories</h3>
