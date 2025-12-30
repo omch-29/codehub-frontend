@@ -15,7 +15,10 @@ const Profile = () => {
   useEffect(() => {
     const fetchUserDetails = async () => {
       const userId = localStorage.getItem("userId");
-
+      if (!userId) {
+      navigate("/auth");
+      return;
+    }
       if (userId) {
         try {
           const response = await axios.get(
@@ -48,20 +51,20 @@ const Profile = () => {
           Overview
         </UnderlineNav.Item>
 
-        <UnderlineNav.Item
-          onClick={() => navigate("/repo")}
-          icon={RepoIcon}
-          sx={{
-            backgroundColor: "transparent",
-            color: "whitesmoke",
-            "&:hover": {
-              textDecoration: "underline",
-              color: "white",
-            },
-          }}
-        >
+        {/* <UnderlineNav.Item */}
+          {/* onClick={() => navigate("/repo")} */}
+          {/* icon={RepoIcon} */}
+          {/* sx={{ */}
+            {/* backgroundColor: "transparent", */}
+            {/* color: "whitesmoke", */}
+            {/* "&:hover": { */}
+              {/* textDecoration: "underline", */}
+              {/* color: "white", */}
+            {/* }, */}
+          {/* }} */}
+        {/* > */}
           {/* Starred Repositories */}
-        </UnderlineNav.Item>
+        {/* </UnderlineNav.Item> */}
       </UnderlineNav>
 
           <button className="dash">
@@ -94,12 +97,12 @@ const Profile = () => {
             <h3>{userDetails.username}</h3>
           </div>
 
-          <button className="follow-btn">Follow</button>
+          {/* <button className="follow-btn">Follow</button>
 
           <div className="follower">
             <p>10 Follower</p>
             <p>3 Following</p>
-          </div>
+          </div> */}
         </div>
 
         <div className="heat-map-section">
