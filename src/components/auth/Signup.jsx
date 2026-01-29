@@ -40,6 +40,13 @@ const Signup = () => {
   };
 
     return(
+      <div className="login-wrapper">
+        {loading && (
+      <div className="loading-overlay">
+        <h2>Loading…</h2>
+        <p>Thanks for your patience, backend is waking up</p>
+      </div>
+    )}
         <div className="login-wrapper">
         <div className="login-logo-container">
         <img className="logo-login" src={logo} alt="Logo" />
@@ -115,6 +122,7 @@ const Signup = () => {
         </div>
         </div>
         {/* <h1>SignUP</h1> */}
+    </div>
     </div>
     );
 };
