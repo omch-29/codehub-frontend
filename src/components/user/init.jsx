@@ -216,6 +216,14 @@ ghx push
       <hr />
       </>
     )}
+    <div className="repo-header">
+  <h2 className="repo-title">{repo.name}</h2>
+  <p className="repo-owner">
+    Created by <span className="owner-username">
+      {repo.owner?.username || repo.owner}
+    </span>
+  </p>
+</div>
 </div>
       <section className="pushed-files">
   <h3>Repository contents</h3>
