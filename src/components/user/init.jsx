@@ -218,6 +218,12 @@ ghx push
     )}
     <div className="repo-header">
   <h2 className="repo-title">{repo.name}</h2>
+  {
+    repo.description && (
+      <p className="repo-description">
+      {repo.description}
+    </p>
+    )}
   <p className="repo-owner">
     Created by <span className="owner-username">
       {repo.owner?.username || repo.owner}
