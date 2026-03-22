@@ -205,7 +205,7 @@ function buildTree(files) {
       </div>
 
       <pre className="instructions">
-{`echo "# ${repo.name}" >> README.md
+{`npm inecho "# ${repo.name}" >> README.md
 ghx init ${cloneURL}
 ghx add <fileName> or ghx add .
 ghx commit "first commit"
