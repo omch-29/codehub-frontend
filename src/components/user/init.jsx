@@ -205,7 +205,8 @@ function buildTree(files) {
       </div>
 
       <pre className="instructions">
-{`npm inecho "# ${repo.name}" >> README.md
+{`npm install -g codehub-ghx-cli
+echo "# ${repo.name}" >> README.md
 ghx init ${cloneURL}
 ghx add <fileName> or ghx add .
 ghx commit "first commit"
