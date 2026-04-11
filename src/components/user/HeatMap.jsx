@@ -8,41 +8,74 @@ const HeatMapProfile = () => {
   const [activity, setActivity] = useState([]);
 
   useEffect(() => {
-    const load = async () => {
+  const load = async () => {
+    const userID = localStorage.getItem("userID") || localStorage.getItem("userId");
+
+    if (!userID) {
+      console.error("No userID found in localStorage");
+      return;
+    }
+
+    const res = await axios.get(
+      `https://codehub-backend-jj4b.onrender.com/repo/contributions/user/${userID}`
+    );
+
+    console.log("User ID used:", userID);
+    console.log("Response:", res.data);
+
+    const grouped = {};
+    res.data.forEach((item) => {
+      const d = item.pushedAt.split("T")[0];
+      grouped[d] = (grouped[d] || 0) + 1;
+    });
+
+    const data = Object.keys(grouped).map((date) => ({
+      date,
+      count: grouped[date],
+      level: Math.min(4, grouped[date]),
+    }));
+
+    setActivity(data);
+  };
+
+  load();
+}, []);
+//   useEffect(() => {
+//     const load = async () => {
      
-      const repoId = localStorage.getItem("repoId") ||
-  localStorage.getItem("currentRepoId") ||
-  new URLSearchParams(window.location.search).get("repoId");
+//       const repoId = localStorage.getItem("repoId") ||
+//   localStorage.getItem("currentRepoId") ||
+//   new URLSearchParams(window.location.search).get("repoId");
 
-      if (!repoId) {
-        console.error("No repoId found in localStorage");
-        return;
-      }
+//       if (!repoId) {
+//         console.error("No repoId found in localStorage");
+//         return;
+//       }
 
-      const res = await axios.get(
-        `https://codehub-backend-jj4b.onrender.com/repo/contributions/repo/${repoId}`
-      );
-console.log("Repo ID used:", repoId);
-console.log("Response:", res.data);
+//       const res = await axios.get(
+//         `https://codehub-backend-jj4b.onrender.com/repo/contributions/repo/${repoId}`
+//       );
+// console.log("Repo ID used:", repoId);
+// console.log("Response:", res.data);
 
-      const grouped = {};
+//       const grouped = {};
 
-      res.data.forEach((item) => {
-        const d = item.pushedAt.split("T")[0]; 
-        grouped[d] = (grouped[d] || 0) + 1;
-      });
+//       res.data.forEach((item) => {
+//         const d = item.pushedAt.split("T")[0]; 
+//         grouped[d] = (grouped[d] || 0) + 1;
+//       });
 
-      const data = Object.keys(grouped).map((date) => ({
-        date,
-        count: grouped[date],
-        level: Math.min(4, grouped[date]),
-      }));
+//       const data = Object.keys(grouped).map((date) => ({
+//         date,
+//         count: grouped[date],
+//         level: Math.min(4, grouped[date]),
+//       }));
 
-      setActivity(data);
-    };
+//       setActivity(data);
+//     };
 
-    load();
-  }, []);
+//     load();
+//   }, []);
 
   if (activity.length === 0) {
     return <div>Loading heatmap...</div>;
