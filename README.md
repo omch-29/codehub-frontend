@@ -64,9 +64,4 @@ Any node_modules inside subfolders
 
 
 
-![Diagram](flow.png)
-![Diagram](./flow.png)
-## Flow Diagram
-
-![Diagram](flow.png)
-![Diagram](https://github.com/omch-29/codehub-frontend/blob/main/flow.png)
+![Diagram](https://raw.githubusercontent.com/omch-29/codehub-frontend/main/flow.png)
