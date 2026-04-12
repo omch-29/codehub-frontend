@@ -66,3 +66,6 @@ Any node_modules inside subfolders
 
 ![Diagram](flow.png)
 ![Diagram](./flow.png)
+## Flow Diagram
+
+![Diagram](flow.png)
