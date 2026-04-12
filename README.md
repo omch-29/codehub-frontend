@@ -69,3 +69,4 @@ Any node_modules inside subfolders
 ## Flow Diagram
 
 ![Diagram](flow.png)
+![Diagram](https://github.com/omch-29/codehub-frontend/blob/main/flow.png)
