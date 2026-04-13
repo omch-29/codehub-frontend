@@ -63,5 +63,3 @@ Any .env inside subfolders
 Any node_modules inside subfolders
 
 
-
-![Diagram](https://raw.githubusercontent.com/omch-29/codehub-frontend/main/flow.png)
