@@ -17,7 +17,7 @@ https://main.dc5bs2bxp9e9j.amplifyapp.com/
 - 🧩 Works inside any project folder  
 
 ---
-
+# cli flow:
 ![Diagram](https://raw.githubusercontent.com/omch-29/codehub-frontend/main/flow.png)
 ## 📦 Installation
 
@@ -52,6 +52,12 @@ ghx commit "your commit message"
 4️⃣ Push to CodeHub cloud
 ghx push
 
+```
+
+#  cli flow:
+![Diagram](https://raw.githubusercontent.com/omch-29/codehub-frontend/main/flow.png)
+
+```bash
 📁 Ignored Files (Auto-Ignored)
 
 The CLI automatically ignores the following when using ghx add .:
