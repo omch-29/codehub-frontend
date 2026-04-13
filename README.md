@@ -18,6 +18,7 @@ https://main.dc5bs2bxp9e9j.amplifyapp.com/
 
 ---
 
+![Diagram](https://raw.githubusercontent.com/omch-29/codehub-frontend/main/flow.png)
 ## 📦 Installation
 
 Install globally from npm:
