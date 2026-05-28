@@ -57,7 +57,7 @@ const Dashboard = () => {
         useEffect(() => {
   const fetchSearchResults = async () => {
     if (searchQuery.trim() === "") {
-      // Show user's
+      
       setSearchResults(repositories);
       return;
     }
