@@ -50,8 +50,6 @@ export default function InitPage() {
   }
 
 
-
-
   useEffect(() => {
   if (!repoId) return;
 
@@ -128,7 +126,6 @@ const isOwner =
 
 
 
-
 function buildTree(files) {
   const tree = {};
 
@@ -195,7 +192,7 @@ function buildTree(files) {
 
 
       <div className="clone-box">
-        {/* <p>Clone using HTTPS</p> */}
+        
         <div className="clone-input">
           <input value={cloneURL} readOnly />
           <button onClick={() => navigator.clipboard.writeText(cloneURL)}>
