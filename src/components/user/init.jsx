@@ -345,10 +345,7 @@ ghx push
 //   return Object.values(tree).map(node => (
 //     <tr
 //       key={node.name}
-//       onClick={() => {
-//         if (node.isFolder) return; // nothing for now
-//         window.location.href = `/file/${repoId}/${encodeURIComponent(node.fullPath)}`;
-//       }}
+//    
 //     >
 //       <td>{node.isFolder ? "📁 " : "📄 "}{node.name}</td>
 //       <td></td>
