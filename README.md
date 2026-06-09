@@ -68,7 +68,3 @@ node_modules/
 Any .env inside subfolders
 Any node_modules inside subfolders
 
-
-node_modules/
-.git/
-.codehub/
