@@ -345,7 +345,7 @@ ghx push
 //   return Object.values(tree).map(node => (
 //     <tr
 //       key={node.name}
-//    
+
 //     >
 //       <td>{node.isFolder ? "📁 " : "📄 "}{node.name}</td>
 //       <td></td>
