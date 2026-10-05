@@ -343,9 +343,6 @@ ghx push
 
 // function renderTree(tree, repoId) {
 //   return Object.values(tree).map(node => (
-//     <tr
-
-//     >
 //       <td>{node.isFolder ? "📁 " : "📄 "}{node.name}</td>
 //       <td></td>
 //     </tr>
