@@ -56,8 +56,6 @@ const Profile = () => {
           {/* icon={RepoIcon} */}
           {/* sx={{ */}
             {/* backgroundColor: "transparent", */}
-            {/* color: "whitesmoke", */}
-            {/* "&:hover": { */}
             
             {/* }, */}
           {/* }} */}
