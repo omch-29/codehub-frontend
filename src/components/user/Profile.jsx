@@ -58,8 +58,7 @@ const Profile = () => {
             {/* backgroundColor: "transparent", */}
             {/* color: "whitesmoke", */}
             {/* "&:hover": { */}
-              {/* textDecoration: "underline", */}
-              {/* color: "white", */}
+            
             {/* }, */}
           {/* }} */}
         {/* > */}
