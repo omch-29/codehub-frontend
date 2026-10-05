@@ -31,7 +31,7 @@ const CreateRepository = () => {
       localStorage.setItem("repoId", res.data.repositoryID);
       console.log("repoId stored:", res.data.repositoryID);
 
-      // Redirect
+      // Redirect after creating repo
       setTimeout(() => {
         navigate(`/init/${res.data.repositoryID}`);
       }, 1200);

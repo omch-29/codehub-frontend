@@ -11,6 +11,7 @@ export default function Repository() {
 
 // useEffect(() => {
 //     localStorage.setItem("repoId", id);
+//{loading}
 //   }, [id]);
  
   useEffect(() => {

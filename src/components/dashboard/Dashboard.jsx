@@ -154,7 +154,7 @@ const Dashboard = () => {
               <p>Developer Meetup - 8 January 207</p>
             </li>
             <li>
-              <p>React Summit -5 October 206</p>
+              <p>React Summit -5 February 2027</p>
             </li>
           </ul>
             </aside>
